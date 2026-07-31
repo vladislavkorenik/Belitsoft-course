@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Knowledges</title>
+		<style>
+			body {
+				background-color: #F9F9F9;
+				font-family: sans-serif;
+				font-size: 14px;
+				font-weight: lighter;
+			}
+			.container {
+				background-color: white;
+				width: 1000px;
+				height: 420px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				box-shadow: 0 3px 4px lightgrey;
+			}
+			.content {
+				margin: 40px 0 0 40px;
+			}
+			h2 {
+				margin-bottom: 40px
+			}
+			.content div {
+				width: 920px;
+				border-radius: 10px;
+				height: 25px;
+			}
+			h3 {
+				margin-bottom: 5px;
+			}
+			.load {
+				background-color: #eee;
+				box-shadow: inset 0px 1px 2px 1px lightgrey;
+			}
+			.content:hover .html {
+				background-color: #FEB74B;
+				animation: 2s anim_1 linear forwards;	
+			}
+			.content:hover .css {
+				background-color: #9673CF;
+				animation: 2s anim_2 linear forwards;	
+			}
+			.content:hover .js {
+				background-color: #EE534F;
+				animation: 2s anim_3 linear forwards;	
+			}
+			.content:hover .jquery {
+				background-color: #66BB6A;
+				animation: 2s anim_4 linear forwards;	
+			}
+			@keyframes anim_1 {
+				from {
+					width: 0%;
+				}
+				to {
+					width: 70%
+				}
+			}
+			@keyframes anim_2 {
+				from {
+					width: 0%;
+				}
+				to {
+					width: 60%
+				}
+			}
+			@keyframes anim_3 {
+				from {
+					width: 0%;
+				}
+				to {
+					width: 50%
+				}
+			}
+			@keyframes anim_4 {
+				from {
+					width: 0%;
+				}
+				to {
+					width: 40%
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<h2>Мои знания:</h2>
+				<h3>HTML</h3>
+				<div class="load">
+					<div class="html"></div>
+				</div>
+				<h3>CSS</h3>
+				<div class="load">
+					<div class="css"></div>
+				</div>
+				<h3>JavaScript</h3>
+				<div class="load">
+					<div class="js"></div>
+				</div>
+				<h3>JQuery</h3>
+				<div class="load">
+					<div class="jquery"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
