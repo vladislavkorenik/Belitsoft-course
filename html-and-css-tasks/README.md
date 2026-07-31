@@ -2,7 +2,7 @@
 
 # HTML and CSS tasks
 
-Practical work from the HTML and CSS part of the course. 49 static pages across 12 task sets, one folder per set. Assets each set needs — images, fonts, sprite sheets — sit alongside its pages.
+Practical work from the HTML and CSS part of the course. 49 static pages across 12 task sets, one folder per set. Each set keeps its images in `img/` and its fonts in `fonts/`.
 
 | Folder    | Pages | Topics                                            |
 | --------- | ----- | ------------------------------------------------- |
@@ -26,3 +26,7 @@ The pages are plain HTML and CSS with no build step — open any file in a brows
 ```sh
 xdg-open task-12/adaptive-layout-grid.html
 ```
+
+## Reference images
+
+`task-05/img/first-layout-page-example.png` shows the page the task asks you to reproduce. No page links to it — that is intentional.
