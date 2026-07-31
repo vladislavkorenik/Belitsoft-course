@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Diary</title>
+		<style>	
+			.star {
+				width: 159px; 
+				height: 150px;
+			}
+			.square {
+                list-style-type: square;
+            }
+            .disc {
+                list-style-type: disc;
+            }
+            .circle {
+                list-style-type: circle;
+            }
+            .italic {
+            	font-style: italic; 
+            }
+            .bold {
+            	font-weight: bold;
+            }
+            .del {
+            	text-decoration: line-through;
+            }
+		</style>
+	</head>
+	<body>
+		<h2 align="center">Дневник партизана</h2>
+		<img src="img/RedArmy.gif" alt="Red star" class="star">
+		<ol>
+			<li>
+				<b>Вторник.</b> Выбили <a title="some link" target = "_blank" href="#">немцев</a> с опушки. Засели в доме <object data="img/home.gif" type="image/gif"></object> лесника.
+			</li>
+			<li>
+				<b>Среда.</b> Мощная контратака немцев вынудила нас оставить занятые ранее позиции.
+			</li>
+			<li>
+				<b>Четверг.</b> Под покровом ночи смогли снова засесть в <object data="img/home.gif" type="image/gif"></object> доме лесника. Курим &laquo;Беломор&raquo;.
+			</li>
+			<li>
+				<b>Пятница.</b> Вернулся лесник и всех выгнал.
+			</li>
+		</ol>
+		<p align="right">
+			&copy; бородатый <a href="#" target="_blank" title="some link">анекдот</a>
+		</p>
+		<hr>
+		<h2 align="center">Продукты</h2>
+		<ol>
+			<li>Молочные продукты
+				<ul class="square">
+					<li>Молоко <span class="italic">(2 пакета)</span></li>
+					<li>Масло</li>
+					<li>Кефир</li>
+					<li>Творог</li>
+				</ul>
+			</li>
+			<li>Овощи и фрукты
+				<ul class="disc">
+					<li>Овощи
+						<ul class="square">
+							<li>Огурцы</li>
+							<li>Помидоры</li>
+							<li>Перцы &ldquo;болгарские&rdquo;
+								<ul class="circle">
+									<li>красные <span class="italic">(2 шт.)</span></li>
+									<li>желтые <span class="italic">(1 шт.)</span></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Фрукты
+						<ul class="square">
+							<li>Яблоки</li>
+							<li><span class="del">Сливы</span></li>
+							<li>Груши</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Хлебобулочные
+				<ul class="disc">
+					<li>Черный &laquo;Бородинский&raquo;</li>
+					<li>Батон <span class="italic">(2 шт.)</span></li>
+				</ul>
+			</li>
+			<li>Мясо
+				<ul class="square">
+					<li><span class="bold">Куриное филе</span></li>
+					<li><span class="del">Говяжья вырезка</span></li>
+				</ul>
+			</li>
+		</ol>
+	</body>
+</html>

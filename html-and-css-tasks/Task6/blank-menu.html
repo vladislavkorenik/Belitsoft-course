@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Blank menu</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: grey;
+				color: white;
+			}
+			.head h1{
+				text-align: center;
+				font-weight: lighter;
+			}
+			.pagination {
+				position: relative;
+				background-color: #2D2D2D;
+			}
+			ul {
+				padding: 0;
+				list-style-type: none;
+			}
+			.menu > li {
+				display: inline-block;
+				position: relative;
+           	 	padding: 10px 25px 10px 55px;
+			}
+			.menu > li::before {
+				content: ' ';
+				width: 35px;
+				height: 35px;
+				position: absolute;
+				background: url('icons.png') no-repeat;
+				left: 20px;
+				bottom: 2px;
+			}
+			.menu > li:first-child::before {
+				background-position: -70px 0px;
+			}
+			.menu > li:last-child::before {
+				background-position: 0px 0px;
+			}
+			.menu > li:nth-child(2)::before {
+				background-position: -105px 0px;
+			}
+			.menu > li:nth-child(3)::before {
+				background-position: right 0px top 0px;
+			}	
+			.menu > li:nth-child(4)::before {
+				background-position: -35px 0px;
+			}
+			.menu > li:hover {
+				background-color: #336699;
+			}	
+			.menu li:hover .submenu{ 
+				display: block;
+			}
+			.submenu {
+				display: none;
+				position: absolute;
+				left: 0px;
+				top: 38px;
+			}
+			.submenu li {
+				display: block;
+				background-color: white;
+				color: grey;
+				padding: 10px 20px;
+				width: 130px;
+				position: relative;
+			}
+			.submenu li:hover {
+				background-color: #C6C6C6;
+			}
+			.submenu li:hover::before {
+				content: '';
+				width: 5px;
+				height: 100%;
+				background-color: #336699;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.submenu li:last-child {
+				position: relative;
+			}
+			.lvl_three {
+				display: none;
+				position: absolute;
+				left: 165px;
+				top: 0;
+			}
+			.submenu li:hover .lvl_three{ 
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<h1>
+			Много-уровневое горизонтальное меню
+			</h1>
+		</div>
+		<div class="pagination">
+			<ul class="menu">
+				<li>Главная
+					<ul class="submenu">
+						<li>Подменю 1</li>
+						<li>Подменю 2</li>
+						<li>Подменю 3</li>
+					</ul>
+				</li>
+				<li>О нас</li>
+				<li>Портфолио
+					<ul class="submenu">
+						<li>Подменю 1</li>
+						<li>Уровень 3 меню
+							<ul class="lvl_three">
+								<li>Подменю 4</li>
+								<li>Подменю 5</li>
+								<li>Подменю 6</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Блог</li>
+				<li>Контакты</li>
+			</ul>
+		</div>
+	</body>
+</html>

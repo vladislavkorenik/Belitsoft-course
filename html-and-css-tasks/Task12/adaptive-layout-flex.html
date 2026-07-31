@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flex</title>
+		<style>
+			* {
+				margin: 0;
+				font-family: sans-serif;
+				font-weight: bold;
+			}
+			ul {
+				list-style-type: none;
+			}
+			li {
+				display: inline-flex;
+				padding: 15px;
+				color: white;
+			}
+			li:last-child {
+				padding-right: 10px;
+			}
+			header {
+				display: flex;
+				justify-content: space-between;
+				color: white;
+				background-color: #00bfff;
+			}
+			.logo h3{
+				background-color: #808080;
+				padding: 15px 50px;
+			}
+			.nav_bar {
+				flex-grow: 1;
+				display: flex;
+				justify-content: flex-end;
+			}
+			main {
+				display: flex;
+				justify-content: space-between;
+			}
+			.aside {
+				flex: 1;
+				text-align: center;
+				padding-top: 10px;
+			}
+			.aside_1 {
+				background-color: #ffd700;
+			}
+			.aside_2 {
+				background-color: #ff69b4;
+			}
+			.info {
+				background-color: cyan;
+				flex: 4;
+				padding: 40px 10px 30px 20px;
+			}
+			.info p {
+				margin: 20px 0 20px 0px;
+			}
+			footer {
+				background-color: #90ee90;
+				display: flex;
+				justify-content: space-between;
+			}
+			.copy {
+				padding: 15px 10px;
+			}
+			@media screen and (max-width: 760px) {
+				header {
+					flex-direction: column;
+				}
+				.logo {
+					align-self: center;
+					background-color: #00bfff;
+				}
+				.nav_bar {
+					justify-content: space-around;
+					padding-left: 0;
+				}
+				main {
+					flex-direction: row;
+					flex-wrap: wrap;
+				}
+				.info {
+					order: -1;
+					flex-basis: 100%;
+				}
+				.aside {
+					padding: 10px;
+				}
+				footer {
+					flex-direction: column;
+				}
+				.copy {
+					text-align: center;
+				}
+				.social {
+					justify-content: space-around;
+					display: flex;
+					padding: 0;
+				}			
+			}
+			@media screen and (max-width: 375px) {
+				main,
+				ul {
+					flex-direction: column;
+					justify-content: center;
+					padding: 0;
+				}
+				li {
+					text-align: center;
+					display: inline;
+					border-top: 1px solid #32c5f6;
+					border-bottom: 1px solid #05b4f0;
+				}
+				.social li {
+					border-top: 1px solid #a2eca2;
+					border-bottom: 1px solid #8fdf8f;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<h3>Logo</h3>
+			</div>
+			<ul class="nav_bar">
+				<li>Главная</li>
+				<li>О нас</li>
+				<li>Продукты</li>
+				<li>Контакты</li>
+			</ul>
+		</header>
+		<main>
+			<div class="aside_1 aside">
+				<h3>Aside type 1</h3>
+			</div>
+			<div class="info">
+				<h1>Lorem ipsum dolor?</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum at quam explicabo cum tempore animi! Esse inventore nesciunt, iure harum ea earum cum ratione vel, explicabo architecto possimus veniam quisquam. ipsum dolor sit amet, consectetur adipisicing elit. Iusto, tenetur. Vero animi, soluta veritatis eveniet maiores odio sequi ipsam velit voluptatem nulla quis beatae incidunt perferendis impedit architecto quibusdam eaque. ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis omnis consectetur saepe aliquam fugit illum, error officiis architecto explicabo itaque magnam nam quam dolore minus possimus consequuntur sunt dicta iste. ipsum dolor sit amet, consectetur adipisicing elit. Minima aliquam nisi fugiat tenetur, enim ipsa aliquid facilis porro aperiam corporis deserunt saepe. Maxime amet veritatis fuga exercitationem iste ipsam tempore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus blanditiis doloribus quasi tenetur voluptate eius facere illo vero inventore non quas perspiciatis, iste voluptatibus, dolore adipisci consectetur consequuntur sed odit. ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quos quam commodi, fugit, ipsam explicabo quibusdam non sequi dolore excepturi modi quisquam, consectetur ipsa cum, voluptate deleniti incidunt quo laborum.
+				</p>
+				<h2>Lorem ipsum dolor</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, modi, maxime. Suscipit hic eaque, praesentium nostrum nesciunt expedita omnis id tempore, sunt doloremque, quisquam est exercitationem aliquid? Magnam necessitatibus, recusandae. ipsum dolor sit amet, consectetur adipisicing elit. Error eveniet voluptates aspernatur distinctio asperiores alias cupiditate labore delectus tenetur doloremque hic recusandae, quia maxime repudiandae ratione soluta deserunt aut. Cumque.
+				</p>
+			</div>
+			<div class="aside_2 aside">
+				<h3>Aside type 2</h3>
+			</div>
+		</main>
+		<footer>
+			<p class="copy">&copy Copyright 2017</p>
+			<ul class="social">
+				<li>Twitter</li>
+				<li>Vkontakte</li>
+				<li>Facebook</li>
+			</ul>
+		</footer>
+	</body>
+</html>

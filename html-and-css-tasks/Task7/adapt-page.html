@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Adaptive page</title>
+		<style>
+			body {
+				margin: 0;
+				font-family: Arial, sans-serif;
+			}
+			.container {
+				max-width: 980px;
+				margin: 0 auto;
+				padding: 0 25px;
+			}
+			.container img {
+				display: block;
+				margin: 0 auto;
+				width: 100%;
+			}
+			.head h1 {
+				color: #2c2f31;
+				margin: 0;
+				text-align: center;
+			}
+			.head {
+				background-color: #c2c2c2;
+				padding: 40px 0;
+			}
+			.block_news {
+				margin-top: 25px;
+			}
+			.first_section {
+				margin-right: 35px;
+			}
+			.first_section,
+			.second_section {
+				display: inline-block;
+			}
+			.news {
+				background-color: #f8f8f8;
+				text-align: center;
+				max-width: 215px;
+				display: inline-block;
+				margin: 15px 30px 0 0;
+			}
+			.news:last-child {
+				margin-right: 0;
+			}
+			p {
+				color: #b2b1b0;
+			}
+			.news p {
+				margin: 30px;
+			}
+			.button {
+				background-color: #68a4c4;
+				padding: 15px 0;
+			}
+			.button a {
+				text-decoration: none;
+				color: white;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			.info {
+				margin-top: 60px;
+			}
+			.footer {
+				background-color: #68a4c4;
+				margin-top: 75px;
+				padding: 25px 0;
+			}
+			.footer p {
+				color: white;
+				font-size: small;
+			}
+			@media screen 
+			and (max-width: 1050px) {
+				.first_section,
+				.second_section {
+					width: 465px;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+			@media screen
+			and (max-width: 768px) {
+				.first_section,
+				.second_section {
+					display: block;
+					width: 100%;
+				}
+				.container {
+					max-width: 700px;
+				}
+				.news {
+					max-width: 100%;
+					margin: 0 auto;
+					margin-top: 15px;
+					padding-top: 15px;
+					display: block;
+				}
+				.container img {
+					width: 90%;
+				}
+			}
+		</style>
+		<body>
+			<div class="header">
+				<div class="container">
+					<img src="head.png" alt="people">
+				</div>
+				<div class="head">
+					<h1>Заголовок первого уровня</h1>
+				</div>
+			</div>
+			<div class="container">
+				<div class="block_news">
+					<div class="first_section">
+						<div class="news">
+							<h3>Новость 1</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+							<div class="button">
+								<a href="#">Читать далее</a>
+							</div>
+						</div>
+						<div class="news">
+							<h3>Новость 2</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+							<div class="button">
+								<a href="#">Читать далее</a>
+							</div>
+						</div>
+					</div>
+					<div class="second_section">
+						<div class="news">
+							<h3>Новость 3</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+							<div class="button">
+								<a href="#">Читать далее</a>
+							</div>
+						</div>
+						<div class="news">
+							<h3>Новость 4</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+							<div class="button">
+								<a href="#">Читать далее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h2>Что такое Lorem Ipsum?</h2>
+					<p>
+						<b>Lorem Ipsum</b>-это текст &laquo;рыба&raquo;, часто используемый в печати и веб-дизайне. Lorem Ipsum является
+						стандартной &laquo;рыбой&raquo; для текстов в латинице с начала XVI века.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil asperiores qui architecto amet soluta dolor obcaecati
+						cum quasi, dolores ad temporibus numquam consectetur iusto eligendi ex, assumenda, enim animi.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laborum, laudantium omnis, molestiae quae in autem
+						doloribus eius exercitationem, inventore provident rerum debitis velit necessitatibus. Exercitationem repellendus possimus eum totam.
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+					</p>
+					<h2>Почему он используется?</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil asperiores qui architecto amet soluta dolor obcaecati
+						cum quasi, dolores ad temporibus numquam consectetur iusto eligendi ex, assumenda, enim animi.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laborum, laudantium omnis, molestiae quae in autem
+						doloribus eius exercitationem, inventore provident rerum debitis velit necessitatibus. Exercitationem repellendus possimus eum totam.
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil asperiores qui architecto amet soluta dolor obcaecati
+						cum quasi, dolores ad temporibus numquam consectetur iusto eligendi ex, assumenda, enim animi.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laborum, laudantium omnis, molestiae quae in autem
+						doloribus eius exercitationem, inventore provident rerum debitis velit necessitatibus. Exercitationem repellendus possimus eum totam.
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+					</p>
+					<h2>Откуда он появился?</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil asperiores qui architecto amet soluta dolor obcaecati
+						cum quasi, dolores ad temporibus numquam consectetur iusto eligendi ex, assumenda, enim animi.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laborum, laudantium omnis, molestiae quae in autem
+						doloribus eius exercitationem, inventore provident rerum debitis velit necessitatibus. Exercitationem repellendus possimus eum totam.
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil asperiores qui architecto amet soluta dolor obcaecati
+						cum quasi, dolores ad temporibus numquam consectetur iusto eligendi ex, assumenda, enim animi.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laborum, laudantium omnis, molestiae quae in autem
+						doloribus eius exercitationem, inventore provident rerum debitis velit necessitatibus. Exercitationem repellendus possimus eum totam.
+					</p>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+					</p>
+					<h2>Где его взять?</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil asperiores qui architecto amet soluta dolor obcaecati
+						cum quasi, dolores ad temporibus numquam consectetur iusto eligendi ex, assumenda, enim animi.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laborum, laudantium omnis, molestiae quae in autem
+						doloribus eius exercitationem, inventore provident rerum debitis velit necessitatibus. Exercitationem repellendus possimus eum totam.
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium error delectus praesentium magni quis voluptatibus libero
+						velit quaerat necessitatibus tempore minima, nemo eos eligendi accusantium nisi. Tenetur, molestias sequi!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil asperiores qui architecto amet soluta dolor obcaecati
+						cum quasi, dolores ad temporibus numquam consectetur iusto eligendi ex, assumenda, enim animi.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laborum, laudantium omnis, molestiae quae in autem
+						doloribus eius exercitationem, inventore provident rerum debitis velit necessitatibus. Exercitationem repellendus possimus eum totam.
+						
+					</p>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<p>
+						&copy; Копирайт 2017
+					</p>
+				</div>
+			</div>
+		</body>
+	</html>

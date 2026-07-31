@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Chess</title>
+		<style>
+			body{
+				background-color: cyan;
+			}
+			h1{
+				text-align: center;
+			}
+			table{
+				margin: 0 auto;
+				width: 480px;
+				height: 480px;
+			border: 2px solid black;
+			background-color: white;
+			border-collapse: collapse;
+			}
+			.letters{
+				border-bottom: 2px solid black;
+				border-top: 2px solid black;
+			}
+			.numbers{
+				border-right: 2px solid black;
+				border-left: 2px solid black;
+			}
+			td{
+				width: 48px;
+				height: 48px;
+			}
+			.black{
+				background-color: rgba(0, 0, 0,.5)
+			}
+			.black_pawn{
+				background-image: url(chess.png);
+				background-position: -240px 0px;
+			}
+			.white_pawn{
+				background-image: url(chess.png);
+					background-position: -240px -48px;
+			}
+			.black_pieces td:nth-child(5){
+				background-image: url(chess.png);
+					background-position: -48px 0px;
+			}
+			.black_pieces td:nth-child(6){
+					background-image: url(chess.png);
+			}
+			.black_pieces td:nth-child(3n+1){
+				background-image: url(chess.png);
+					background-position: -144px 0px;
+			}
+			.black_pieces td:nth-child(5n-2){
+				background-image: url(chess.png);
+					background-position: -192px 0px;
+			}
+			.black_pieces td:nth-child(7n-5){
+				background-image: url(chess.png);
+					background-position: -96px 0px;
+			}
+			.white_pieces td:nth-child(5){
+				background-image: url(chess.png);
+					background-position: -48px -48px;
+			}
+			.white_pieces td:nth-child(6){
+				background-image: url(chess.png);
+					background-position: 0px -48px;
+			}
+			.white_pieces td:nth-child(3n+1){
+				background-image: url(chess.png);
+					background-position: -144px -48px;
+			}
+			.white_pieces td:nth-child(5n-2){
+				background-image: url(chess.png);
+					background-position: -192px -48px;
+			}
+			.white_pieces td:nth-child(7n-5){
+				background-image: url(chess.png);
+					background-position: -96px -48px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Шахматы</h1>
+		<div class="chess">
+			<table>
+				<tr>
+					<th></th>
+					<th class="letters">a</th>
+					<th class="letters">b</th>
+					<th class="letters">c</th>
+					<th class="letters">d</th>
+					<th class="letters">e</th>
+					<th class="letters">f</th>
+					<th class="letters">g</th>
+					<th class="letters">h</th>
+					<th></th>
+				</tr>
+				<tr class="black_pieces">
+					<th class="numbers">8</th>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<th class="numbers">8</th>
+				</tr>
+				<tr>
+					<th class="numbers">7</th>
+					<td class="black black_pawn"></td>
+					<td class="black_pawn"></td>
+					<td class="black black_pawn"></td>
+					<td class="black_pawn"></td>
+					<td class="black black_pawn"></td>
+					<td class="black_pawn"></td>
+					<td class="black black_pawn"></td>
+					<td class="black_pawn"></td>
+					<th class="numbers">7</th>
+				</tr>
+				<tr>
+					<th class="numbers">6</th>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<th class="numbers">6</th>
+				</tr>
+				<tr>
+					<th class="numbers">5</th>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<th class="numbers">5</th>
+				</tr>
+				<tr>
+					<th class="numbers">4</th>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<th class="numbers">4</th>
+				</tr>
+				<tr>
+					<th class="numbers">3</th>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<th class="numbers">3</th>
+				</tr>
+				<tr>
+					<th class="numbers">2</th>
+					<td class="white_pawn"></td>
+					<td class="black white_pawn"></td>
+					<td class="white_pawn"></td>
+					<td class="black white_pawn"></td>
+					<td class="white_pawn"></td>
+					<td class="black white_pawn"></td>
+					<td class="white_pawn"></td>
+					<td class="black white_pawn"></td>
+					<th class="numbers">2</th>
+				</tr>
+				<tr class="white_pieces">
+					<th class="numbers">1</th>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<td class="black"></td>
+					<td></td>
+					<th class="numbers">1</th>
+				</tr>
+				<tr>
+					<th></th>
+					<th class="letters">a</th>
+					<th class="letters">b</th>
+					<th class="letters">c</th>
+					<th class="letters">d</th>
+					<th class="letters">e</th>
+					<th class="letters">f</th>
+					<th class="letters">g</th>
+					<th class="letters">h</th>
+					<th></th>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

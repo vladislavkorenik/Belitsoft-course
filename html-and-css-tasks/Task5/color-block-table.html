@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color block table</title>
+	<style>
+		html,
+		body{
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		table{
+			height: 100%;
+			width: 100%;
+			border-collapse: collapse;
+		}
+		.first_layer{
+			background-color: yellow;
+		}
+		.second_layer td{
+			background-color: green;
+		}
+		.second_layer th{
+			background-color: blue;
+		}
+		.third_layer td:first-child{
+			background-color: orange;
+		}
+		.third_layer td:first-child + td{
+			background-color: purple;
+		}
+		.third_layer td:last-child{
+			background-color: red;
+		}
+		.fourth_layer{
+			background-color: cyan;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr class="first_layer">
+			<td colspan="6"></td>
+		</tr>
+		<tr class="second_layer">
+			<td></td>
+			<td></td>
+			<td></td>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr class="third_layer">
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+		</tr>
+		<tr class="fourth_layer">
+			<td colspan="6"></td>
+		</tr>
+	</table>
+</body>
+</html>

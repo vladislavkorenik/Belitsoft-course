@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Slider</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<style>
+			.centered_x{
+				left: 50%;
+				transform: translateX(-50%);
+				position: absolute;
+			}
+			body {
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+			}
+			h1 {
+				text-align: center;
+				font-weight: lighter;
+			}
+			.slider {
+				margin-top: 50px;
+				height: 425px;
+				background: black;
+				position: relative;
+				overflow: hidden;
+			}
+			.text {
+				color: white;
+				text-align: center;
+				bottom: 35%;
+			}
+			.text h4 {
+				text-transform: uppercase;
+				font-weight: lighter;
+				font-size: 45px;
+				border-top: 2px solid white;
+				border-bottom: 2px solid white;
+				margin: 0;
+			}
+			.text p {
+				font-weight: lighter;
+				font-size: 35px;
+				margin-top: 10px;
+			}
+			.buttons {
+				height: 100%;
+				max-width: 1200px;
+				position: relative;
+				margin: 0 auto;
+			}
+			.left,
+			.right {
+				position: absolute;
+				height: 100%;
+				width: 110px;
+				background: url(prev-next-sprite.png);
+				background-repeat: no-repeat;
+			}
+			.left {
+				background-position: left 80px top 170px;
+				left: 0;
+			}
+			.right {
+				background-position: right 80px top 170px;
+				right: 0;
+			}
+			.pagination {
+				width: 210px;
+				top: 85%;
+			}
+			ul li {
+				display: inline-block;
+				list-style-type: square;
+			}
+			li a {
+				display: block;
+				padding: 10px;
+				background-color: #ffffff;
+				margin: 0 5px;
+			}
+			li a:hover {
+				background-color: #f8a408;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>
+		Верстка заготовки для слайдера
+		</h1>
+		<div class="slider">
+			<img src="slider-img-01.jpg" alt="background" class="centered_x">
+			<div class="text centered_x">
+				<h4>
+				комфортная одежда
+				</h4>
+				<p>
+					для всех видов спорта
+				</p>
+			</div>
+			<div class="buttons">
+				<a href="#" class="right"></a>
+				<a href="#" class="left"></a>
+			</div>
+			<div class="pagination centered_x">
+				<ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
