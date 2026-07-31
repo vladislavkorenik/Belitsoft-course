@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Form</title>
+		<style>
+			body {
+				background-color: #D3D3D3;
+				font-family: Arial, sans-serif;
+			}
+			.header h1 {
+				background-color: #6499FF;
+				text-align: center;
+				color: white;
+				font-weight: lighter;
+				border-radius: 10px 10px 0 0;
+				padding: 10px;
+				font-size: 25px;
+			}
+			.container {
+				margin: 0 auto;
+				background-color: white;
+				width: 500px;
+				border-radius: 10px;
+			}
+			label {
+				color: #6C6C6E;
+				font-size: 10px;
+				font-weight: bold;
+				margin-left: 5px;
+			}
+			.forms {
+				margin: 15px 0px 0px 25px;
+				position: relative;
+			}
+			.forms input, 
+			textarea {
+				height: 30px;
+				width: 410px;
+				border: 1px solid grey;
+				border-radius: 5px;
+				padding-left: 40px;
+				font-size: 12px;
+			}
+			input:focus,
+			textarea:focus {
+				border: 2px solid #6499FF;
+				outline: none;
+			}
+			textarea {
+				height: 90px;
+			}
+ 			.button {
+				margin-bottom: 20px ;
+				background-color: #6499FF;
+				border: none;
+				border-radius: 5px;
+				width: 250px;
+				height: 40px;
+				color: white;
+				font-size: 15px;
+			}
+			.center {
+				text-align: center;
+			}
+			label::after {
+				content: " ";
+				position: absolute;
+            	top: 24px;
+            	left: 0px;
+            	height: 30px;
+            	width: 30px;
+        	}  
+        	.forms:first-child label::after {
+            	background: url(form-spritesheet.png) no-repeat;
+            	background-position: right 2px top 0;
+        	}
+        	.forms:nth-child(2) label::after {
+            	background: url(form-spritesheet.png) no-repeat;
+            	background-position: left -20px top 0;
+        	}
+       		.forms:nth-child(3) label::after {
+            	background: url(form-spritesheet.png) no-repeat;
+            	background-position: right -25px top 0;
+            	width: 22px;
+            	margin-left: 5px;
+        	}
+        	.forms:nth-child(4) label::after {
+            	background: url(form-spritesheet.png) no-repeat;
+            	background-position: left 10px top 0;
+       	 	}
+       	 	.inline input {
+       	 		width: 250px;
+       	 	}
+       	 	.inline #name {
+       	 		margin-left: 50px;
+       	 	}
+       	 	.inline #email {
+       	 		margin-left: 44px;
+       	 	}
+       	 	.inline #number {
+       	 		margin-left: 28px;
+       	 	}
+       	 	.inline label:not(.comment)::after {
+            	top: 5px;
+            	left: 85px;
+        	}  
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>Обратная связь</h1>
+			</div>
+			<form class="inline">
+				<div class="forms">
+					<label for="name">Имя:</label>
+					<input type="text" id="name" placeholder="Введите Ваше имя">
+				</div>
+				<div class="forms">
+					<label for="email">Email:</label>
+					<input type="text" id="email" placeholder="Введите адрес Вашей почты">
+				</div>
+				<div class="forms">
+					<label for="number">Телефон:</label>
+					<input type="text" id="number" placeholder="Введите номер телефона">
+				</div>
+				<div class="forms">
+					<label for="comments" class="comment">Сообщение:</label>
+					<textarea name="comment" id="comments" placeholder="Текст сообщения"></textarea>
+				</div>
+				<p class="center">
+					<input type="submit" value="Отправить" class="button">
+				</p>
+			</form>
+		</div>
+	</body>
+</html>
